@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont{
+    width: 80%;
+    background-color: #b91450;
+    margin: auto;
+}
+
+.cont-calc-prezzo{
+    width: 80%;
+}
+
+.form-control{
+    width: 80%;
+    margin: auto;
+}
+
+.info-pass{
+    height: 130px;
+}
+
+.font-s{
+    font-size: 12px;
+}
+
+.font-s2{
+    font-size: 11px;
+}
