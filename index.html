@@ -15,22 +15,27 @@
         <div class="container bg-light bg-white cont-calc-prezzo pt-3 rounded-3">
             <div class="row pb-4">
                 <div class="col-4">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
+                    <label for="inputName" class="form-label pink-text">Nome e Cognome</label>
+                    <input type="text" class="form-control" id="inputName" value="">
                 </div>
                 <div class="col-4">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
+                    <label for="inputKm" class="form-label pink-text">Km da percorrere</label>
+                    <input type="email" class="form-control " id="inputkm" value="">
                 </div>
                 <div class="col-4">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
+                    <span class="pink-text">Fascia d'età</span>
+                    <select class="form-select mt-2" aria-label="Default select example" id="inputEta">
+                        <option selected>Scegli la fascia d'età:</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Over 65">Over 65</option>
+                      </select>
                 </div>
             </div>
             <div class="row pt-4 pb-3">
                 <div class="col-12">
-                    <button type="button" class="btn btn-light">Genera</button>
-                    <button type="button" class="btn btn-light">Annulla</button>
+                    <button type="button" class="btn btn-light pink-text" id="button" onclick="return false">Genera</button>
+                    <button type="button" class="btn btn-light pink-text">Annulla</button>
                 </div>
             </div>
         </div>

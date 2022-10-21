@@ -10,3 +10,24 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
  
  */
 
+
+let inputName = document.getElementById('inputName');
+
+let inputkm = document.getElementById('inputkm');
+
+let inputEta = document.getElementById('inputEta');
+
+//creo la funzione
+button.addEventListener('click', function(){
+//dopo il click del bottone si attiva questo codice
+
+    const valueName = inputName.value;
+
+    const valuekm = inputkm.value;
+
+    const valueEta = inputEta.value;
+
+    console.log(valueName, valuekm, valueEta);
+
+
+})

@@ -17,6 +17,7 @@
 .form-control{
     width: 80%;
     margin: auto;
+    border-color: #b91450;
 }
 
 .info-pass{
@@ -29,4 +30,12 @@
 
 .font-s2{
     font-size: 11px;
+}
+
+.pink-text{
+    color: #b91450;
+}
+
+.form-select{
+    border-color: #b91450;
 }
