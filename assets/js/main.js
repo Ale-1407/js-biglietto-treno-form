@@ -10,6 +10,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
  
  */
 
+let button = document.getElementById('button');
 
 let inputName = document.getElementById('inputName');
 
@@ -17,9 +18,11 @@ let inputkm = document.getElementById('inputkm');
 
 let inputEta = document.getElementById('inputEta');
 
+//prezzo km
+let prezzoKm = 0.21;
+
 //creo la funzione
 button.addEventListener('click', function(){
-//dopo il click del bottone si attiva questo codice
 
     const valueName = inputName.value;
 
@@ -29,5 +32,26 @@ button.addEventListener('click', function(){
 
     console.log(valueName, valuekm, valueEta);
 
+    if( valueName === '' || valuekm ==='' || valueEta === ''){
+        console.log('compila tutto!');
+    }else {
+        let prezzoBiglietto = valuekm * prezzoKm;
 
+        let prezzoMagg = prezzoBiglietto;
+
+        let prezzoMin = prezzoBiglietto * 0.80;
+
+        let prezzo65 = prezzoBiglietto * 0.60;
+
+        if (valueEta === 'Maggiorenne'){
+            document.getElementById('prezzo').innerHTML = `${prezzoMagg.toFixed(2)}`
+        } else if (valueEta === 'Minorenne'){
+            document.getElementById('prezzo').innerHTML = `${prezzoMin.toFixed(2)}`
+        } else if (valueEta === 'Over 65'){
+            document.getElementById('prezzo').innerHTML = `${prezzo65.toFixed(2)}`
+        }
+    }
 })
+
+
+
